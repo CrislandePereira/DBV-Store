@@ -45,7 +45,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
               </p>
             </>
           ) : (
-            <p className="text-sm font-bold">
+            <p className="font-bold">
               R$ {Number(product.basePrice).toFixed(2).replace(".", ",")}
             </p>
           )}

@@ -38,15 +38,15 @@ const ProductItem = ({ product }: ProductItemProps) => {
           {product.discountPercentage > 0 ? (
             <>
               <p className="font-bold">
-                R$ {Number(product.totalPrice).toFixed(2)}
+                R$ {Number(product.totalPrice).toFixed(2).replace(".", ",")}
               </p>
               <p className="text-xs text-gray-400 line-through">
-                R$ {Number(product.basePrice).toFixed(2)}
+                R$ {Number(product.basePrice).toFixed(2).replace(".", ",")}
               </p>
             </>
           ) : (
             <p className="text-sm font-bold">
-              R$ {Number(product.basePrice).toFixed(2)}
+              R$ {Number(product.basePrice).toFixed(2).replace(".", ",")}
             </p>
           )}
         </div>
